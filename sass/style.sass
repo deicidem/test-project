@@ -1,0 +1,44 @@
+
+$main: #18216D
+$side: #00ecd0
+
+*
+  box-sizing: border-box
+
+body
+  font-family: 'Inter', sans-serif
+  color: $main
+  margin: 0
+.container
+  max-width: 1140px
+  margin: 0 auto
+
+.mobile
+  display: none
+
+
+.btn
+  position: relative
+  z-index: 300
+  cursor: pointer
+  font-size: 17px
+  font-weight: 500
+  padding: 16px 27px
+  font-weight: 500
+  border-radius: 6px
+  border: none 
+
+
+
+@media (max-width: 576px)
+  .mobile
+    display: block
+  .desktop
+    display: none
+  .container
+    max-width: 380px
+    padding: 0 20px
+@import header
+@import main
+@import info
+@import features

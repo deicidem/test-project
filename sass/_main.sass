@@ -1,0 +1,66 @@
+.main
+  margin-top: 190px
+  margin-bottom: 250px
+  &-title
+    font-weight: 600
+    font-size: 48px
+    line-height: 60px
+    margin-bottom: 15px
+  &-subtitle
+    line-height: 28px
+    font-size: 17px
+    margin-bottom: 34px
+  &-btn
+    background-color: $side
+    color: $main
+    padding: 23px 37px 
+  &-content
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &::after
+      z-index: 200
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 766px
+      height: 766px
+      border-radius: 50%
+      background: rgba(#FF523D, 0.10)
+      filter: blur(150px)
+      transform: translate(-50%, -50%)
+  &-text
+    max-width: 500px
+  &-image
+    position: absolute
+    top: -60px
+    right: -40px
+
+@media (max-width: 576px)
+  .main
+    margin-top: 85px
+    margin-bottom: 60px
+    &-title
+      text-align: center
+      font-size: 28px
+      line-height: 27px
+      margin-bottom: 20px
+    &-subtitle
+      margin: 0 auto 33px
+      max-width: 280px
+      text-align: center
+      font-size: 14px
+      line-height: 20px
+    &-btn
+      display: block
+      margin: 0px auto 40px
+      padding: 11px 17px
+      font-size: 14px
+    &-content
+      flex-direction: column
+      align-items: center
+      justify-content: flex-start
+    &-image
+      position: static

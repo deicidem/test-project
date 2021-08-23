@@ -1,0 +1,62 @@
+.features
+  margin-bottom: 300px
+  &-title
+    text-align: center
+    font-size: 48px
+    line-height: 64px
+    font-weight: 600
+    margin-bottom: 12px
+  &-subtitle
+    margin-left: auto
+    margin-right: auto
+    font-size: 16px
+    text-align: center
+    max-width: 550px
+    margin-bottom: 48px
+    line-height: 30px
+  &-item
+    width: 320px
+    &__image
+      margin-bottom: 28px
+    &__title
+      font-size: 24px
+      font-weight: 600
+      margin-bottom: 14px
+    &__text
+      font-size: 16px
+      line-height: 26px
+      margin-bottom: 30px
+    &__link
+      cursor: pointer
+      font-size: 20px
+      line-height: 16px
+      font-weight: 500
+      text-decoration: none
+    &s
+      display: flex
+      align-items: center
+      justify-content: space-between
+
+@media (max-width: 576px)
+  .features
+    &-title
+      font-size: 24px
+      line-height: 24px
+    &-subtitle
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 40px
+    &-items
+      flex-direction: column
+    &-item
+      margin-bottom: 50px
+      &__image
+        margin-bottom: 20px
+        max-height: 48px
+      &__title
+        font-size: 20px
+        margin-bottom: 12px
+      &__text
+        font-size: 14px
+        line-height: 24px
+        margin-bottom: 20px

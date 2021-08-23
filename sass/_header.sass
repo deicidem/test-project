@@ -1,0 +1,98 @@
+.header
+  &-bg
+    height: 102px
+    width: 100%
+    position: fixed
+    z-index: 200
+    background: #fff
+    top: 0
+    left: 0
+  &-content
+    z-index: 300
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    padding: 25px 0
+  &-container
+    display: flex
+    align-items: center
+    margin: 0 auto
+    max-width: 1400px
+  &-logo
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-right: 85px
+    &__title
+      margin-left: 7px
+      font-weight: 600
+      font-size: 20px
+  &-menu
+    &__button
+      display: none
+    &__list
+      display: flex
+      align-items: center
+      justify-content: center
+      list-style: none
+      padding: 0
+      margin: 0
+    &__item
+      cursor: pointer
+      margin: 0 29px
+      font-weight: 500
+      font-size: 18px
+  &-btn
+    color: #fff
+    background: $main
+    margin-left: 20px
+    &-o
+      color: $main
+      background: #fff
+  &-buttons
+    margin-left: auto
+
+
+@media (max-width: 576px)
+  .header
+    &-bg
+      height: 70px
+    &-container
+      max-width: 380px
+      padding: 0 15px
+      justify-content: space-between
+    &-logo
+      &__image
+        width: 20px
+        height: 20px
+      &__title
+        margin-left: 5px
+        font-size: 12px
+    &-menu
+      &__button
+        cursor: pointer
+        display: block
+        width: 28px
+        height: 14px
+        position: relative
+        &::after
+          position: absolute
+          content: ''
+          top: 1px
+          right: 0
+          height: 2px
+          width: 100%
+          background: $main
+        &::before
+          position: absolute
+          content: ''
+          bottom: 1px
+          right: 0
+          height: 2px
+          width: 80%
+          background: $main
+      &__list
+        display: none
+    &-buttons
+      display: none
